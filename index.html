@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- Font-Manrope -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+<!-- font awesome -->
+
+<script src="https://kit.fontawesome.com/a86454507a.js" crossorigin="anonymous"></script>
+
+
+
+<style>
+    .manrope{
+        font-family: "Manrope", sans-serif;
+    }
+</style>
+
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            color: '#FF4240',
+          }
+        }
+      }
+    }
+  </script>
+
+
+</head>
+<body class="manrope mx-auto px-[50px]  lg:px-[200px]">
+    <header>
+
+        <!-- Nav Bar Section  -->
+
+        <section class="mb-12 mt-3">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </div>
+                 </div>
+                  
+                  <a class="btn btn-ghost font-extrabold text-xl lg:text-3xl">HOCKEY<span class="text-red-500 ">'</span>S</a>
+                </div>
+                <div class="navbar-center hidden lg:flex text-xs">
+                  <ul class="menu menu-horizontal px-1">
+                    <li class="text-color"><a>Home</a></li> 
+                    <li><a>About</a></li> 
+                    <li><a>Pages</a></li>
+                    <li><a>Blog</a></li>
+                    <li><a>Contact</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end">
+                  <a class="btn bg-color text-white py-4 px-6 rounded-lg">Button</a>
+                </div>
+              </div>
+        </section>
+
+        <!-- Sliders Section  -->
+
+        <section class="mb-24">
+            <div class="carousel w-full rounded-2xl h-[200px] lg:h-[550px]">
+                <div id="slide1" class="carousel-item relative w-full">
+                  <img src="images/1.png" class="w-full" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide4" class="btn btn-circle">❮</a> 
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                <div id="slide2" class="carousel-item relative w-full">
+                  <img src="images/2.png" class="w-full" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn btn-circle">❮</a> 
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                <div id="slide3" class="carousel-item relative w-full">
+                  <img src="images/3.png" class="w-full" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide2" class="btn btn-circle">❮</a> 
+                    <a href="#slide4" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                <div id="slide4" class="carousel-item relative w-full">
+                  <img src="images/4.png" class="w-full" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide3" class="btn btn-circle">❮</a> 
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                  </div>
+                </div>
+              </div>
+        </section>
+
+    </header>
+
+    <main>
+
+            <!-- Radial Progress Section  -->
+
+        <section class="mb-[100px]">
+                    <div>
+                        <div class="text-center">
+                            <h1 class="font-extrabold text-4xl mb-4">Professional Hockeys Club</h1>
+                            <p class="mb-20">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+                        </div>
+        
+                       <div class="grid grid-cols-1 lg:flex gap-6 justify-center">
+                        <div class="justify-center text-center">
+                            <div class="radial-progress text-red-500 h-30 w-30  mb-4" style="--value:87;" role="progressbar">87%</div>
+                            <div>
+                                <h3 class="text-sm font-bold mb-3 ">Prayer Facility</h3>
+                                <p class="text-xs">Amet consectetur. Condimentum dignissim adipiscing .</p>
+                            </div>
+                        </div>
+                        <div class="justify-center text-center">
+                            <div class="radial-progress text-green-500 h-30 w-30  mb-4" style="--value:95;" role="progressbar">95%</div>
+                            <div>
+                                <h3 class="text-sm font-bold mb-3 ">Prayer Facility</h3>
+                                <p class="text-xs">Amet consectetur. Condimentum dignissim adipiscing .</p>
+                            </div>
+                        </div>
+                        <div class="justify-center text-center">
+                            <div class="radial-progress text-yellow-500 h-30 w-30  mb-4" style="--value:90;" role="progressbar">90%</div>
+                            <div>
+                                <h3 class="text-sm font-bold mb-3 ">Prayer Facility</h3>
+                                <p class="text-xs">Amet consectetur. Condimentum dignissim adipiscing .</p>
+                            </div>
+                        </div>
+                        <div class="justify-center text-center">
+                            <div class="radial-progress text-blue-500 h-30 w-30  mb-4" style="--value:80;" role="progressbar">80%</div>
+                            <div>
+                                <h3 class="text-sm font-bold mb-3 ">Prayer Facility</h3>
+                                <p class="text-xs">Amet consectetur. Condimentum dignissim adipiscing .</p>
+                            </div>
+                        </div>
+                       </div>
+                    </div>
+        </section>
+        
+            <!-- Program Section -->
+        
+        <section class="mb-20">
+                    <div>
+                        <div class="text-center">
+                            <h3 class="text-4xl font-bold mb-4">Program Section</h3>
+                            <p class="text-base mb-10">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+                        </div>
+                        <div>
+                            <div>
+                                <div class="relative">
+                                    <img src="images/2.png" alt="">
+                                </div>
+                                <div class="absolute">
+                                    <h3>Junior Program</h3>
+                                    <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
+                                        enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
+                                    <div class="navbar-end">
+                                        <a class="btn bg-color text-white py-4 px-6 rounded-lg">Button</a>
+                                      </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        </section>
+        
+            <!-- Our new Products -->
+                
+        <section>
+            <div>
+                <div class="text-center">
+                    <h3 class="text-4xl font-bold mb-4">Our New Products</h3>
+                    <p class="text-base mb-10">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+                </div>
+                <div class="grid grid-cols-1 ">
+                    <div class="lg:flex grid grid-cols-1">
+                        <div class="card bg-base-100 grid grid-cols-1 lg:flex card-side lg:w-[50%]">
+                            <figure class="px-10 pt-10">
+                              <img src="images/5.png" alt="Jacket" class="rounded-xl" />
+                            </figure>
+                            <div class="card-body  ">
+                                <div class="flex gap-4">
+                                    <div class="gap-2">
+                                    <i class="fa-solid text-yellow-500 fa-star"></i>
+                                    <p>5.00</p>
+                                    </div>
+                                    <div class="gap-2">
+                                    <i class="fa-regular fa-eye"></i>
+                                    <p>100</p>
+                                    </div>
+                                    <div class="gap-2">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <p>100</p>
+                                    </div>
+    
+                                </div>
+                              <h2 class="card-title">World Cup Flags Football</h2>
+                              <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+                              <div class="lg:flex">
+                                <p class="text-red-500 font-bold">Price - $22.00 </p>
+                                <div class="flex gap-2">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    <p>Delivery Fee : Free</p>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="card bg-base-100 grid grid-cols-1 lg:flex card-side lg:w-[50%]">
+                            <figure class="px-10 pt-10">
+                              <img src="images/6.png" alt="Jacket" class="rounded-xl" />
+                            </figure>
+                            <div class="card-body  ">
+                                <div class="flex gap-4">
+                                    <div class="gap-2">
+                                    <i class="fa-solid text-yellow-500 fa-star"></i>
+                                    <p>5.00</p>
+                                    </div>
+                                    <div class="gap-2">
+                                    <i class="fa-regular fa-eye"></i>
+                                    <p>100</p>
+                                    </div>
+                                    <div class="gap-2">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <p>100</p>
+                                    </div>
+    
+                                </div>
+                              <h2 class="card-title">World Cup Flags Football</h2>
+                              <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+                              <div class="lg:flex">
+                                <p class="text-red-500 font-bold">Price - $22.00 </p>
+                                <div class="flex gap-2">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    <p>Delivery Fee : Free</p>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="lg:flex grid grid-cols-1">
+                        <div class="card bg-base-100 grid grid-cols-1 lg:flex card-side lg:w-[50%]">
+                            <figure class="px-10 pt-10">
+                              <img src="images/7.png" alt="Jacket" class="rounded-xl" />
+                            </figure>
+                            <div class="card-body  ">
+                                <div class="flex gap-4">
+                                    <div class="gap-2">
+                                    <i class="fa-solid text-yellow-500 fa-star"></i>
+                                    <p>5.00</p>
+                                    </div>
+                                    <div class="gap-2">
+                                    <i class="fa-regular fa-eye"></i>
+                                    <p>100</p>
+                                    </div>
+                                    <div class="gap-2">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <p>100</p>
+                                    </div>
+    
+                                </div>
+                              <h2 class="card-title">World Cup Flags Football</h2>
+                              <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+                              <div class="lg:flex">
+                                <p class="text-red-500 font-bold">Price - $22.00 </p>
+                                <div class="flex gap-2">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    <p>Delivery Fee : Free</p>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="card bg-base-100 grid grid-cols-1 lg:flex card-side lg:w-[50%]">
+                            <figure class="px-10 pt-10">
+                              <img src="images/8.png" alt="Jacket" class="rounded-xl" />
+                            </figure>
+                            <div class="card-body  ">
+                                <div class="flex gap-4">
+                                    <div class="gap-2">
+                                    <i class="fa-solid text-yellow-500 fa-star"></i>
+                                    <p>5.00</p>
+                                    </div>
+                                    <div class="gap-2">
+                                    <i class="fa-regular fa-eye"></i>
+                                    <p>100</p>
+                                    </div>
+                                    <div class="gap-2">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <p>100</p>
+                                    </div>
+    
+                                </div>
+                              <h2 class="card-title">World Cup Flags Football</h2>
+                              <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+                              <div class="lg:flex">
+                                <p class="text-red-500 font-bold">Price - $22.00 </p>
+                                <div class="flex gap-2">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    <p>Delivery Fee : Free</p>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="lg:flex grid grid-cols-1">
+                        <div class="card bg-base-100 grid grid-cols-1 lg:flex card-side lg:w-[50%]">
+                            <figure class="px-10 pt-10">
+                              <img src="images/9.png" alt="Jacket" class="rounded-xl" />
+                            </figure>
+                            <div class="card-body  ">
+                                <div class="flex gap-4">
+                                    <div class="gap-2">
+                                    <i class="fa-solid text-yellow-500 fa-star"></i>
+                                    <p>5.00</p>
+                                    </div>
+                                    <div class="gap-2">
+                                    <i class="fa-regular fa-eye"></i>
+                                    <p>100</p>
+                                    </div>
+                                    <div class="gap-2">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <p>100</p>
+                                    </div>
+    
+                                </div>
+                              <h2 class="card-title">World Cup Flags Football</h2>
+                              <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+                              <div class="lg:flex">
+                                <p class="text-red-500 font-bold">Price - $22.00 </p>
+                                <div class="flex gap-2">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    <p>Delivery Fee : Free</p>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="card bg-base-100 grid grid-cols-1 lg:flex card-side lg:w-[50%]">
+                            <figure class="px-10 pt-10">
+                              <img src="images/10.png" alt="Jacket" class="rounded-xl" />
+                            </figure>
+                            <div class="card-body  ">
+                                <div class="flex gap-4">
+                                    <div class="gap-2">
+                                    <i class="fa-solid text-yellow-500 fa-star"></i>
+                                    <p>5.00</p>
+                                    </div>
+                                    <div class="gap-2">
+                                    <i class="fa-regular fa-eye"></i>
+                                    <p>100</p>
+                                    </div>
+                                    <div class="gap-2">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <p>100</p>
+                                    </div>
+    
+                                </div>
+                              <h2 class="card-title">World Cup Flags Football</h2>
+                              <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+                              <div class="lg:flex">
+                                <p class="text-red-500 font-bold">Price - $22.00 </p>
+                                <div class="flex gap-2">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    <p>Delivery Fee : Free</p>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+                    
+        </section>
+
+    </main>
+
+    <footer>
+        
+    </footer>
+    
+</body>
+</html>
